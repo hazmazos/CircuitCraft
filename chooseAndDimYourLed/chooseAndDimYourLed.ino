@@ -44,7 +44,7 @@ void loop() {
 
 void chooseLed(){
 
-  ledRead = analogRead(changeBrightnessPin);
+  ledRead = analogRead(changeLedSelectionPin);
   chosenLed = ledRead * conversion;
   
   if(chosenLed<=1.0){
